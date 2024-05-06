@@ -1,0 +1,10 @@
+span {
+  flex: 0.8;
+}
+.th {
+  display: flex;
+}
+li {
+  list-style: none;
+  padding-right: 50px;
+}

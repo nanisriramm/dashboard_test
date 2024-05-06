@@ -1,0 +1,16 @@
+<!-- dashboard.component.html -->
+<div class="dashboard-container">
+  <div class="sidebar" [ngClass]="{ 'sidebar-open': isSidebarOpen }">
+    <ul>
+      <!-- dashboard.component.html -->
+      <h2><a href="dashboard/department"> Departments</a></h2>
+    </ul>
+  </div>
+  <div class="main-content">
+    <button class="hamburger-icon" (click)="toggleSidebar()">
+      <i class="fa fa-bars"></i>
+    </button>
+    <button (click)="logout()">Logout</button>
+    <router-outlet></router-outlet>
+  </div>
+</div>

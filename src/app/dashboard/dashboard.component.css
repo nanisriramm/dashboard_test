@@ -1,0 +1,56 @@
+/* dashboard.component.css */
+.dashboard-container {
+  display: flex;
+
+  height: 100%;
+}
+
+.sidebar {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  background-color: whitesmoke;
+
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-250px);
+  height: 580px;
+}
+
+.sidebar-open {
+  transform: translateX(0);
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.hamburger-icon {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  right: 0;
+  transform: translateX(-120px);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100px;
+}
+
+li {
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
